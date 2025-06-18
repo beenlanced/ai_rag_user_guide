@@ -1,0 +1,17 @@
+[project]
+name = "ai-rag-user-guide"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.0.12",
+    "faiss-cpu>=1.11.0",
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
+    "langchain>=0.3.25",
+    "langchain-ollama>=0.3.3",
+    "pydf>=12",
+    "pytest>=8.4.1",
+    "streamlit>=1.46.0",
+]
