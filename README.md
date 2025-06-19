@@ -44,7 +44,7 @@ Lastly, I turn this RAG model into a shareable web application using the [Stream
 
 The project contains the key elements:
 
-- `Chat0llama` instantiates chatbot like feature,
+- `ChatOllama` instantiates chatbot like feature,
 - `Deep Learning` for neural network building,
 - `FAISS` open source vector embedding database making it easy to build LLM apps
 - `Faiss-cpu` CPU only version of Facebook AI Similarity Search used for similarity search and clustering of dense vectors,
