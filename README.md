@@ -49,6 +49,7 @@ The project contains the key elements:
 - `FAISS` open source vector embedding database making it easy to build LLM apps
 - `Faiss-cpu` CPU only version of Facebook AI Similarity Search used for similarity search and clustering of dense vectors,
 - `Git` (version control),
+- `Hugging Face` using LLM models stored here, 
 - `Jupyter` python coded notebooks,
 - `LangChain`, simplify the creation of applications using chaining process with LLMs,
 - `Natural Language Processing (NLP)` to understand, interpret, and manipulate text,
