@@ -96,6 +96,8 @@ https://github.com/ollama/ollama?tab=readme-ov-file
 **Note** After building the project or sometime later you can also uninstall Ollama if you are like me, and want to declutter your computing device.
 (see instructions for MacOS [here](https://www.youtube.com/watch?v=GRsy_Kaeq84))
 
+Here is a [Ollama Cheatsheet](https://secretdatascientist.com/ollama-cheatsheet/)
+
 ### Clone the Repo
 
 1. Clone the repo (or download it as a zip file):
@@ -155,6 +157,9 @@ https://github.com/ollama/ollama?tab=readme-ov-file
    streamlit run app.py
    ```
 
+   It may take some time for the app to render a browser depending upon the type of CPU you are running, so you may have to
+   have a little patience when posting a question and especially when awaiting a response. Good things come to those who wait.
+
 2. **View App from a browser**
    It may take a moment, but streamlit should launch. Afterwards
 
@@ -172,7 +177,7 @@ You can now view the Streamlit iPod app in a browser.
    </p>
 
 4. **Close out of the App**
-   To close out of the application terminate the browser and type ctrl-z in the terminal to suspend the streamlit process
+   To close out of the application terminate the browser and type ctrl-c in the terminal to stop the streamlit process
 
 ---
 
@@ -216,6 +221,8 @@ Specifically, I would like to acknowledge:
   https://github.com/pixegami/langchain-rag-tutorial/blob/main/create_database.py
 
 - The folks at Apple, Inc. for their [iPod Shuffle (4th generation) user guide](https://support.apple.com/en-us/docs/ipod/133017)
+
+- The folks at Langchain for their [FAISS Documentation](https://python.langchain.com/docs/integrations/vectorstores/faiss/)
 
 - [Hema Kalyan Murapaka](https://www.linkedin.com/in/hemakalyan) and [Benito Martin](https://martindatasol.com/blog) for sharing their README.md templates upon which I have derieved my README.md.
 
