@@ -22,10 +22,10 @@ import streamlit as st
 ollama_endpoint = "http://127.0.0.1:11434"
 embeddings = OllamaEmbeddings(model=MODEL, base_url=ollama_endpoint)
 
-#Get stored Vector Store
+# Get stored Vector Store
 vector_store = FAISS.load_local(
-    FAISS_INDEX, 
-    embeddings, 
+    FAISS_INDEX,
+    embeddings,
     allow_dangerous_deserialization=True
 )
 
@@ -69,5 +69,5 @@ chain = (
 st.title("The iPod Shuffle 2015 User Guide App")
 
 question = st.chat_input("Enter your user guide question here:")
-if question: 
-    st.write(chain.invoke({"question": question}))
+if question:
+  st.write(chain.invoke({"question": question}))
