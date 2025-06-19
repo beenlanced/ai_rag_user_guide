@@ -20,7 +20,7 @@ So, in short I decided to design a RAG system to become my "iPod Shuffle AI Assi
 
 ### My Solution
 
-This project builds a RAG model using LangChain and an initial Llama 3.1 LLM. I inject new knowledge, the iPod user manual, as a vector database, chunking the manual pdf file into various sections. In short, I create a simple question and response application, where the model in the middle is the RAG model with all of its embedding, prompt engineering, and retrieval goodness. The application has the following form:
+This project builds a RAG model using LangChain and an initial Llama 3.2 LLM. I inject new knowledge, the iPod user manual, as a vector database, chunking the manual pdf file into various sections. In short, I create a simple question and response application, where the model in the middle is the RAG model with all of its embedding, prompt engineering, and retrieval goodness. The application has the following form:
 
 <p>
   <img alt="Question Response flow " src="imgs/question_response.png"/>
@@ -53,7 +53,7 @@ The project contains the key elements:
 - `LangChain`, simplify the creation of applications using LLMs,
 - `Natural Language Processing (NLP)` to understand, interpret, and manipulate text,
 - `Numpy` for array manipulation,
-- `Llama 3.1` ollama simple model providing initial LLM,
+- `Llama 3.2` ollama simple model providing initial LLM,
 - `Pandas` for dataframe usage,
 - `Prompt Engineering` to retrieve information
 - `Pydf` to manipulate pdf files,
@@ -86,6 +86,15 @@ Here are some instructions to help you set up this project locally.
 ## Installation Steps
 
 The Python version used for this project is `Python 3.12`.
+
+### Download Ollama
+
+Obtain the Ollama Application to run the Ollama Server here
+
+https://github.com/ollama/ollama?tab=readme-ov-file
+
+**Note** After building the project or sometime later you can also uninstall Ollama if you are like me, and want to declutter your computing device.
+(see instructions for MacOS [here](https://www.youtube.com/watch?v=GRsy_Kaeq84))
 
 ### Clone the Repo
 
@@ -122,11 +131,48 @@ The Python version used for this project is `Python 3.12`.
    uv pip install -r pyproject.toml
    ```
 
-### Install the Jupyter Notebook(s)
+### Install the Jupyter Notebook(s) to run the EDA notebook
 
-1. **Run the Project**
+1. **Run the EDA POC**
 
    - Run the Jupyter Notebook(s) in the Jupyter UI or in VS Code.
+
+### Running the Streamlit app
+
+0. **Make sure the Ollama Server is running**
+
+1. **Run app.py script**
+   From a terminal, navigate to the location of the `app.py` file.
+   in the terminal type:
+
+   ```bash
+   uv run streamlit run app.py
+   ```
+
+   or if you are not using `uv`
+
+   ```bash
+   streamlit run app.py
+   ```
+
+2. **View App from a browser**
+   It may take a moment, but streamlit should launch. Afterwards
+
+You can now view the Streamlit iPod app in a browser.
+
+```
+  Local URL: http://localhost:8501
+```
+
+3. **Example Rendering**
+   The broswer should render a result similar to the following where you will be able to ask questions and receive responses related to the iPod user manual. (see figure below)
+
+   <p>
+      <img alt="Streamlit iPod App Rendering " src="imgs/streamlit_app_example.png"/>
+   </p>
+
+4. **Close out of the App**
+   To close out of the application terminate the browser and type ctrl-z in the terminal to suspend the streamlit process
 
 ---
 
@@ -161,6 +207,13 @@ I would like to extend my gratitude to all the individuals and organizations who
 Specifically, I would like to acknowledge:
 
 - https://www.youtube.com/watch?v=6ExFTPcJJFs and https://github.com/AarohiSingla/Generative_AI/blob/main/L-6/app1.py
+
+- uninstall ollama -
+  how to uninstall ollama on MAC
+  https://www.youtube.com/watch?v=GRsy_Kaeq84
+
+- for chroma
+  https://github.com/pixegami/langchain-rag-tutorial/blob/main/create_database.py
 
 - The folks at Apple, Inc. for their [iPod Shuffle (4th generation) user guide](https://support.apple.com/en-us/docs/ipod/133017)
 
