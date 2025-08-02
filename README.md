@@ -92,7 +92,7 @@ The Python version used for this project is `Python 3.12`.
 Obtain the Ollama Application to run the Ollama Server [here](https://github.com/ollama/ollama?tab=readme-ov-file).
 
 **Note** After building the project or anytime later you can also uninstall Ollama, if you are like me, and want to declutter your computing device.
-(see instructions for MacOS [here](https://www.youtube.com/watch?v=GRsy_Kaeq84)).
+(see instructions for macOS [here](https://www.youtube.com/watch?v=GRsy_Kaeq84)).
 
 Here is an [Ollama Cheatsheet](https://secretdatascientist.com/ollama-cheatsheet/) as well.
 
@@ -118,7 +118,7 @@ Here is an [Ollama Cheatsheet](https://secretdatascientist.com/ollama-cheatsheet
 
 3. Activate the virtual environment: `.venv`
 
-   On macOs and Linux:
+   On macOS and Linux:
 
    ```bash
    source .venv/bin/activate #mac
